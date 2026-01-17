@@ -246,6 +246,17 @@
             .about-grid, .education-layout { grid-template-columns: 1fr; gap: 2rem; }
             .metrics-panel { margin-top: 2rem; }
             .nav-links { display: none; }
+            .hero {
+                /* 1. On désactive le centrage vertical strict qui pousse le texte vers le haut */
+                align-items: flex-start; 
+                
+                /* 2. On ajoute un coussin en haut (hauteur de la nav + marge) */
+                padding-top: 100px; 
+                
+                /* 3. On permet à la section de grandir si le texte est long */
+                height: auto;
+                min-height: 100vh;
+            }
             .hero-content h1 { font-size: 2.5rem; }
             section { padding: 4rem 5%; }
         }
